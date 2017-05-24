@@ -1,0 +1,38 @@
+title: Manon Jayet
+author: Axel Goetz
+email: manon.jayet@hotmail.com
+description: Manon Jayet's personal website.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://mjayet.com" # the base hostname & protocol for your site, e.g. http://example.com
+timezone: "Europe/London"
+
+
+instagram_url: https://www.instagram.com/mjayet/
+facebook_url: https://www.facebook.com/manon.jayet.5/
+linkedin_url: https://www.linkedin.com/in/manon-jayet-1374b9105/
+
+# Build settings
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - CNAME
+  - node_modules
+  - package.json
+
+gems:
+  - jekyll-feed
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"

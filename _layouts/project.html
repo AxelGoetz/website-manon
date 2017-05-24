@@ -1,0 +1,27 @@
+---
+layout: standard
+---
+
+{% assign project = page %}
+
+<div class="slideshow-container">
+  <div class="slideshow">
+    {% for image in project.images %}
+    <div class="slideshow-element fade">
+      <img src="{{ image.url }}" alt="{{ images.alt}}"/>
+    </div>
+    {% endfor %}
+    <a id="prev" onclick="nextSlide(-1)">&#10094;</a>
+    <a id="next" onclick="nextSlide(1)">&#10095;</a>
+  </div>
+  <div class="slideshow-counter">
+    {% for image in project.images %}
+    <span class="dot" onclick="currentSlide({{ forloop.index }})"></span>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="project-text">
+  <h1>{{ project.title }}</h1>
+  <div class="content">{{ content }}</div>
+</div>

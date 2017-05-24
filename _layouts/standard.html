@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="wrapper">
+  {% include header.html %}
+
+  <div class="content-wrapper">
+      {{ content }}
+  </div>
+
+  {% include footer.html %}
+</div>
+
+<script type="text/javascript" src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>

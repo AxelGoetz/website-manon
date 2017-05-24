@@ -1,0 +1,34 @@
+
+<footer>
+  <div class="copyright">
+    <i class="fa fa-copyright" aria-hidden="true"></i>
+    Manon Jayet
+  </div>
+
+  <div class="social-media">
+    {% if site.email %}
+      <div>
+        <a href="mailto:{{ site.email }}" title="Email me">
+          <i class="icon fa fa-envelope" aria-hidden="true"></i>
+        </a>
+      </div>
+    {% endif %}
+
+    {% if site.instagram_url %}
+    <div>
+      <a href="{{ site.instagram_url }}" target="_blank" title="Instagram">
+        <i class="icon fa fa-instagram" aria-hidden="true"></i>
+      </a>
+    </div>
+    {% endif %}
+
+    {% if site.linkedin_url %}
+      <div>
+        <a href="{{ site.linkedin_url }}" target="_blank" title="LinkedIn">
+          <i class="icon fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </div>
+    {% endif %}
+
+  </div>
+</footer>

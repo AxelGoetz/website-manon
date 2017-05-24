@@ -1,0 +1,15 @@
+---
+layout: standard
+title: Projects
+permalink: /projects/
+---
+
+<div class="project-container">
+{% for project in site.projects %}
+  <a href="{{ project.url }}" class="project">
+    <img src="{{ project.img }}">
+    <div class="project-title">{{ project.title }}</div>
+    <div class="project-description"> {{ project.description}}</div>
+  </a>
+{% endfor %}
+</div>

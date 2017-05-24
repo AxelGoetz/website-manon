@@ -1,0 +1,24 @@
+---
+layout: nil
+---
+{"projects": [
+{% for project in site.projects %}
+  {
+    "title": "{{ project.title }}",
+    "project_id": "{{ project.project_id }}",
+    "img": "{{ project.img}}",
+    "description": "{{ project.description }}",
+    "images": [
+    {% for image in project.images %}
+      {
+        "url": "{{ image.url }}"
+        {% if image.alt %}
+        ,"alt": "{{ image.alt }}"
+        {% endif %}
+      }
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]}
+  {% unless forloop.last %},{% endunless %}
+{% endfor %}
+]}
