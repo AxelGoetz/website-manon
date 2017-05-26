@@ -4,8 +4,11 @@ title: Projects
 permalink: /projects/
 ---
 
+{% assign projects = site.projects | sort:"weight" %}
+
+
 <div class="project-container">
-{% for project in site.projects %}
+{% for project in projects %}
   <a href="{{ project.url }}" class="project">
     <img src="{{ project.img }}">
     <div class="project-title">{{ project.title }}</div>
