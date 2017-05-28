@@ -606,3 +606,73 @@ footer {
 .designs::after {
   display: none;
 }
+
+/* Index */
+
+.index-content {
+  width: 90%;
+  height: 200px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+@media screen and (max-width: 900px) {
+  .index-content {
+    position: absolute;
+    top: 15%;
+
+    width: 90%;
+    margin: 0 5%;
+  }
+
+  .index-left {
+    max-width: : 100%;
+    padding-bottom: 20px;
+  }
+
+  .index-image {
+    max-width: 100%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .index-content {
+    position: absolute;
+    top: 30%;
+
+    width: 70%;
+    margin: 0 15%;
+  }
+
+  .index-image {
+    display: block;
+  }
+
+  .index-left {
+    max-width: 59%;
+  }
+}
+
+.index-left {
+  align-self: center;
+}
+
+.index-image {
+  max-height: 100%;
+  height: auto;
+  width: auto;
+
+  min-width: 40px;
+
+  border-radius: 100%;
+}
+
+.index-title {
+  font-size: 2em;
+  padding-bottom: 15px;
+}
