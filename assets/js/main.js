@@ -10,14 +10,18 @@ const setWidthProjects = function() {
 let slideIndex = 1;
 
 const setArrows = function(elem) {
-  let height = elem.clientHeight;
-  let newHeight = ((height / 2.0) + 20) + 'px';
+  try {
+    let height = elem.clientHeight;
+    let newHeight = ((height / 2.0) + 20) + 'px';
 
-  let prev = document.getElementById('prev');
-  let next = document.getElementById('next');
+    let prev = document.getElementById('prev');
+    let next = document.getElementById('next');
 
-  prev.style.top = newHeight;
-  next.style.top = newHeight;
+    prev.style.top = newHeight;
+    next.style.top = newHeight;
+  } catch(e) {
+    return;
+  }
 };
 
 const nextSlide = function(n) {
@@ -46,10 +50,15 @@ const showSlide = function(n) {
   setArrows(slides[slideIndex - 1]);
 };
 
+const showMenu = function() {
+  document.getElementById("mobile-navigation").classList.toggle("show");
+};
+
 const main = function() {
   setWidthProjects();
   window.addEventListener("resize", setWidthProjects);
   window.addEventListener("resize", () => setArrows(document.getElementsByClassName("slideshow-element")[slideIndex-1]));
+  window.addEventListener("resize", () => { if(window.outerWidth > 800) {  document.getElementById("mobile-navigation").classList.remove("show"); }});
 
   try {
     showSlide(slideIndex);
@@ -58,4 +67,5 @@ const main = function() {
   }
 };
 
-main();
+setWidthProjects();
+window.onload = main;
