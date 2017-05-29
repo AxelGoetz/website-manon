@@ -676,3 +676,14 @@ footer {
   font-size: 2em;
   padding-bottom: 15px;
 }
+
+/* 404 */
+
+.error {
+  position: absolute;
+  top: 30%;
+
+  width: 90%;
+  height: 200px;
+  margin: 0 5%;
+}
