@@ -13,4 +13,4 @@ images:
     alt: Form and Structure Sculpture
 ---
 
-Structural work using wood and paper.
+The form and structure case was completed in a group of two. As an introduction to the first year, we were asked to create a volume consisting of three cubes, which had to be connected to each other in a matter of choice. My fellow student and I chose to link the middle cube to the centre of the other two. The interior of these three cubes had to consist of a number of geometrical figures, that were carefully chosen and positioned by us. We opted for a diamond-shaped figure in the middle of the central cube, which contains an even smaller diamond shape. This central figure joins the other two cubes, where the geometrical figures were placed on the diagonal of each cube.

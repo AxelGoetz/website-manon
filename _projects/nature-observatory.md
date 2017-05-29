@@ -2,7 +2,7 @@
 project_id: nature-observatory
 title: Nature Observatory
 img: "/assets/images/nature-observatory/img2.jpg"
-description: "Nature observatory."
+description: "A nature observatory in the Lofoten Islands (Norway), where you can admire the nature lighting."
 weight: 5
 
 images:
@@ -34,4 +34,4 @@ images:
     alt: Nature Observatory Sculpture
 ---
 
-Nature observatory.
+A nature look-out center, created in an abandoned warehouse and to be placed somewhere of choice. As my concept was to ‘admire the light’, I chose to place my center on The Lofoten Islands in Norway. As this is one of the most beautiful places to admire natural lighting. I designed four different areas, each representing a different season of the year. Each area consists of a different lighting, peculiar to the season, which is obtained by several heights of floorings and different kinds of canvases..
